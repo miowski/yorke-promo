@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Jeunesse",
+    "textContent": "Il nait le 7 octobre 1968 à Wellingborough, au Royaume-Uni.",
+    "type": "l"
+  },
+  {
+    "id": 2,
+    "name": "Débuts",
+    "textContent": "C'est un admirateur de Brian May, du groupe Queen. Cela le pousse à s'intéresser à la musique ; il reçoit une guitare à ses 7 ans. Plus tard, à 11 ans, il rencontre à l'école les membres du futur célèbre groupe :",
+    "type": "r"
+  },
+  {
+    "id": 3,
+    "name": "Radiohead.",
+    "textContent": "À l'origine appelé \"On A Friday\", le groupe se renomme ainsi lorsqu'il devient célèbre. C'est le titre \"Creep\" qui provoquera sa percée. Thom Yorke n'abandonne pas ses projets solo pour autant.",
+    "type": "r"
+  },
+  {
+    "id": 4,
+    "name": "The Eraser",
+    "textContent": "En 2006, Yorke annonce la sortie d'un album qu'il a \"écrit et interprété\". Il veille à rassurer les fans sur la nature du projet, qui ne signifie en rien la \"fin\" de Radiohead.",
+    "type": "l"
+  },
+  {
+    "id": 5,
+    "name": "Depuis",
+    "textContent": "En 2014, Thom Yorke sort Tomorrow's Modern Boxes, suivi de plusieurs tournées.<br>Plus récemment, il annonce en 2021 la création du groupe The Smile, avec Jonny Greenwood et Tom Skinner.",
+    "type": "r"
+  }
+]

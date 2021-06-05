@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "The Eraser",
+    "released": 2006,
+    "genre": "Rock, Electronic",
+    "image": "the-eraser.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Eraser Rmxs",
+    "released": 2007,
+    "genre": "Rock, Electronic, EDM, Experimental",
+    "image": "the-eraser-rmxs.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tomorrow's Modern Boxes",
+    "released": 2014,
+    "genre": "Electro",
+    "image": "tomorrows-modern-boxes.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Suspiria",
+    "released": 2018,
+    "genre": "Experimental, Score",
+    "image": "suspiria.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Anima",
+    "released": 2019,
+    "genre": "Electro, IDM, Experimental",
+    "image": "anima.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Spitting Feathers",
+    "released": 2006,
+    "genre": "Electro, Indie Rock, Experimental",
+    "image": "spitting-feathers.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Suspirium",
+    "released": 2018,
+    "genre": "Electro, Experimental",
+    "image": "suspirium.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Analyse",
+    "released": 2006,
+    "genre": "Rock, IDM, Electro, Experimental",
+    "image": "analyse.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Analyse",
+    "released": 2006,
+    "genre": "Rock, IDM, Electro, Experimental",
+    "image": "analyse.jpg"
+  }
+]
