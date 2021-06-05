@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Thom Yorke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/typo.css">
+
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Vue-router pour injection des composants => routage & navigation -->
+    <script src="https://unpkg.com/vue-router"></script>
+
+    <!-- Lib Axios pour Ajax -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <nav>
+            <router-link to="/">
+                <img id="navbar-logo" src="assets/img/logo.png" alt="Logo du site">
+            </router-link>
+            <ul id="navbar-items">
+                <li>
+                    <router-link to="/" class="navbar-link">Accueil</router-link>
+                </li>
+                <li>
+                    <router-link to="/Biographie" class="navbar-link">Biographie</router-link>
+                </li>
+                <li>
+                    <router-link to="/Albums" class="navbar-link">Albums</router-link>
+                </li>
+                <li>
+                    <router-link to="/editAlbum" tag="button" id="login">Contribuer</router-link>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <router-view></router-view>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Plan du site</h3>
+                <ul class="footer-links">
+                    <li>
+                        <router-link to="/" class="footer-link">Accueil ></router-link>
+                    </li>
+                    <li>
+                        <router-link to="/Biographie" class="footer-link">Biographie ></router-link>
+                    </li>
+                    <li>
+                        <router-link to="/Albums" class="footer-link">Albums ></router-link>
+                    </li>
+                    <li style="margin-top:10px"><a>Espace éditeur ></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>À propos</h3>
+                <ul class="footer-links">
+                    <li>
+                        <router-link to="/Contact" class="footer-link">Contact ></router-link>
+                    </li>
+                    <li style="font-size:smaller"><p>Réalisé dans le cadre d'un projet pédagogique au <a
+                            href="http://mmimontbeliard.com">département MMI de
+                        Montbéliard</a></p></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <div>
+                    <img src="assets/svg/instagram.svg" alt="Instagram">
+                </div>
+                <div>
+                    <img src="assets/svg/twitter.svg" alt="Twitter">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Composants de pages -->
+<script src="pages/accueil.vue.js"></script>
+<script src="pages/biographie.vue.js"></script>
+<script src="pages/albums.vue.js"></script>
+<script src="pages/contact.vue.js"></script>
+<script src="pages/album/create.vue.js"></script>
+
+<!-- Paramétrage back-end -->
+<script src="param/param.js"></script>
+
+<script>
+
+    var routes = [
+        {path: '/', name: "Accueil", component: Accueil},
+        {path: '/biographie', name: "Biographie", component: Biographie},
+        {path: '/albums', name: "Albums", component: Albums},
+        {path: '/contact', name: "Contact", component: Contact},
+        {path: '/editAlbum', name: "EditAlbum", component: EditAlbum}
+    ]
+
+    var router = new VueRouter(
+        {routes: routes}
+    )
+    // Create app vue
+    var app = new Vue({
+        el: "#app",
+        router: router
+    })
+</script>
+</body>
+</html>

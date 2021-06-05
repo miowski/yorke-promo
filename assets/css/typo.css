@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Space+Mono:ital@1&display=swap');
+
+h1, h2, h3, #bio-conclusion {
+    font-family: "Space Mono", monospace;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+button {
+    font-size: larger;
+}
+
+p, li, button, td {
+    font-family: "Manrope", serif;
+}
+
+p#intro-albums-wordart {
+    font-family: "Space Mono", monospace;
+    font-style: italic;
+    font-size: larger;
+    text-align: justify;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.bio-section-r {
+    text-align: right;
+}
+
+#bio-conclusion {
+    font-size: 2rem;
+    text-align: center  ;
+}

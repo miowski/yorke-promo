@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="833" height="522.236" viewBox="0 0 833 522.236">
+  <g id="Groupe_15" data-name="Groupe 15" transform="translate(-133 -315.747)">
+    <g id="logo-large" transform="translate(-103 151.413)">
+      <path id="triangle-2" d="M1473.749,402.028l25.673-237.694,193.013,141.08Zm57.263-166.189-11.133,103.078,94.834-41.9Z" transform="translate(-629.434 0)" fill="#094240"/>
+      <path id="triangle-3" d="M1467.63,723.395,1331.858,595.536l178.614-53.653ZM1379.41,606.761l74.164,69.841,23.4-99.149Z" transform="translate(-556.868 -193.088)" fill="#094240"/>
+      <path id="triangle-1" d="M1078.923,584.66l-109.744-307.2L1290.1,336.016ZM1066,359.687l35.726,100.006,68.745-80.942Z" transform="translate(-371.385 -57.853)" fill="#094240"/>
+      <path id="logo" d="M673.467,229.531l-80.74,120.548L560.991,229.524l-299.764.273L243,304.243h92.85L282.21,557.417h84.365l53.64-253.175H489.87l43.524,127.529L507.071,556.416h83.944l25.593-121.181,154.055-205.7Z" transform="translate(0 -33.34)" fill="#e8f2d0"/>
+    </g>
+    <text id="thom_yorke" data-name="thom yorke" transform="translate(133 788.984)" fill="#202020" font-size="136" font-family="SpaceMono-Italic, Space Mono" font-style="italic"><tspan x="0" y="0">thom yorke</tspan></text>
+  </g>
+</svg>

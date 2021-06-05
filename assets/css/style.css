@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    color: #E8F2D0;
+    overflow-x: hidden;
+}
+
+#app {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background: #202020;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#navbar-items {
+    position: absolute;
+    right: 1vw;
+}
+
+#navbar-items li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 2vw 0 2vw;
+    color: #E8F2D0;
+}
+
+#navbar-logo {
+    height: 8vh;
+    width: auto;
+    padding: 1vh;
+}
+
+button {
+    padding: 1.5vh 4vw 1.5vh 4vw;
+    border: solid #E8F2D0 2px;
+    border-radius: 3px;
+    background: none;
+    transition: .4s;
+}
+
+#login {
+    color: #E8F2D0;
+}
+
+#login:hover {
+    background: #4C4E46;
+}
+
+
+footer {
+    background: #202020;
+    width: 100vw;
+    color: #E8F2D0;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.footer-content > div {
+    border-right: 3px solid #E8F2D0;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 33%;
+}
+
+.footer-content > div:nth-child(3) {
+    border: none;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+.footer-socials > div {
+    margin-right: 1.5rem;
+}
+
+.footer-socials > div > img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.intro {
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+}
+
+#intro-accueil {
+    background: url('../img/kid-a-bgn.jpg') center;
+}
+
+.intro-items {
+    position: relative;
+    top: 15%;
+    height: 55%;
+    display: flex;
+    width: 100vw;
+    background: rgba(45, 70, 143, 0.34)
+}
+
+#intro-logo {
+    width: 55%;
+}
+
+#intro-logo > img {
+    margin: 2.5% auto auto auto;
+    display: block;
+    height: 95%;
+}
+
+.intro-items > img {
+    width: 45%;
+}
+
+#intro-portrait > img {
+    height: 100%;
+    width: auto;
+}
+
+.intro-albums {
+    height: 80vh;
+    background: #101832;
+}
+
+#intro-albums-wordart {
+    padding-top: 20vh;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+.intro > button, .intro-albums > button {
+    position: relative;
+    display: block;
+    margin: auto;
+    color: #E8F2D0;
+}
+
+.intro > button {
+    top: 25vh;
+    border: solid #202020;
+    background: rgba(32, 32, 32, 0.5);
+}
+
+.intro-albums > button {
+    border: solid #E8F2D0;
+    background: #101832;
+}
+
+.intro > button:hover {
+    background: #101832;
+}
+
+.intro-albums > button:hover {
+    background: #0F7571;
+}
+
+a, .navbar-link, .footer-link {
+    text-decoration: none;
+    color: #E8F2D0;
+    transition: .2s;
+}
+
+a {
+    color: #A5AD95;
+}
+
+a:hover, .navbar-link:hover, .footer-link:hover {
+    color: #0F7571;
+}
+
+/* Section Biographie */
+
+#intro-biographie {
+    background: url('../img/biography-bgn.jpg') center;
+    display: flex;
+    width: 100vw;
+}
+
+#intro-biographie > h1 {
+    position: relative;
+    top: 45%;
+    left: 0;
+    padding: 2rem 4rem 2rem 6rem;
+    background: rgba(45, 70, 143, 0.6);
+    color: #E8F2D0;
+    width: fit-content;
+    height: fit-content;
+}
+
+#intro-biographie > img {
+    position: absolute;
+    height: 90%;
+    bottom: 0;
+    right: 10%;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.bio-content {
+    padding-top: 10rem;
+    color: #101832;
+}
+
+.bio-content > div {
+    width: 25%;
+}
+
+.bio-section {
+    padding-left: 15%;
+    padding-right: 5rem;
+    border-right: dashed #0F7571 2px;
+}
+
+.bio-section:nth-child(2), .bio-section:nth-child(4) {
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 15%;
+    padding-left: 5rem;
+    border-left: solid #0F7571 2px;
+    border-right: none;
+}
+
+#bio-conclusion {
+    margin: 15%;
+    color: #0F7571;
+}
+
+/* Albums */
+
+.albums, .contribuer {
+    color: #101832;
+}
+
+.albums-content {
+    display: flex;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.album {
+    border: solid #101832 3px;
+    border-radius: 3px;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.25rem;
+    padding: 1rem;
+}
+
+.album > p {
+    position: relative;
+    float: bottom;
+}
+
+.album-items {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.contact > h1, .contact > p, .albums, .contribuer {
+    color: #101832;
+    margin: 2rem 5rem 2rem;
+}
+
+.contact > form {
+    width: 50%;
+    margin: 0 5rem 0;
+}
+
+input {
+    padding: 0.6rem;
+    border: solid #101832 2px;
+    border-radius: 3px;
+}
+
+#edit-a-name {
+    margin-right: 2px;
+}
+
+#edit-a-name, #edit-a-release {
+    width: 24%;
+    margin-bottom: 2px;
+}
+
+#edit-a-genre {
+    width: 50%;
+    margin-bottom: 10vh;
+}
+
+#form-confirm {
+    margin: 10px;
+}
+
+#form-confirm:hover {
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#album-add {
+    background: url('assets/img/thin-plus-sign.png');
+    background-size: cover;
+}
