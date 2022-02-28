@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Thom Yorke</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Feuilles de style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/typo.css">
 
     <!-- VueJS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <!-- Vue-router pour injection des composants => routage & navigation -->
-    <script src="https://unpkg.com/vue-router"></script>
+    <script src="https://unpkg.com/vue-router@3.4.8"></script>
 
     <!-- Lib Axios pour Ajax -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -21,23 +22,27 @@
 <div id="app">
     <header>
         <nav>
-            <router-link to="/">
-                <img id="navbar-logo" src="assets/img/logo.png" alt="Logo du site">
+            <router-link  to="/">
+                <img id="navbar-logo" src="assets/img/logo.png" alt="Site logo">
             </router-link>
-            <ul id="navbar-items">
-                <li>
-                    <router-link to="/" class="navbar-link">Accueil</router-link>
-                </li>
-                <li>
-                    <router-link to="/Biographie" class="navbar-link">Biographie</router-link>
-                </li>
-                <li>
-                    <router-link to="/Albums" class="navbar-link">Albums</router-link>
-                </li>
-                <li>
-                    <router-link to="/editAlbum" tag="button" id="login">Contribuer</router-link>
-                </li>
-            </ul>
+            <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+                <div class="nav-toggle-bar"></div>
+            </div>
+            <div class="menu">
+                <div class="menu-content">
+                    <ul id="navbar-items">
+                        <li>
+                            <router-link to="/" class="navbar-link">Home ></router-link>
+                        </li>
+                        <li>
+                            <router-link to="/Biographie" class="navbar-link">Biography ></router-link>
+                        </li>
+                        <li>
+                            <router-link to="/Albums" class="navbar-link">Albums ></router-link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -46,29 +51,27 @@
     <footer>
         <div class="footer-content">
             <div>
-                <h3>Plan du site</h3>
+                <h3>Site map</h3>
                 <ul class="footer-links">
                     <li>
-                        <router-link to="/" class="footer-link">Accueil ></router-link>
+                        <router-link to="/" class="footer-link">Home ></router-link>
                     </li>
                     <li>
-                        <router-link to="/Biographie" class="footer-link">Biographie ></router-link>
+                        <router-link to="/Biographie" class="footer-link">Biography ></router-link>
                     </li>
                     <li>
                         <router-link to="/Albums" class="footer-link">Albums ></router-link>
                     </li>
-                    <li style="margin-top:10px"><a>Espace éditeur ></a></li>
                 </ul>
             </div>
             <div>
-                <h3>À propos</h3>
+                <h3>About us</h3>
                 <ul class="footer-links">
                     <li>
                         <router-link to="/Contact" class="footer-link">Contact ></router-link>
                     </li>
-                    <li style="font-size:smaller"><p>Réalisé dans le cadre d'un projet pédagogique au <a
-                            href="http://mmimontbeliard.com">département MMI de
-                        Montbéliard</a></p></li>
+                    <li style="font-size:smaller"><p>Designed and coded as part of an educational project at the <a
+                            href="http://mmimontbeliard.com">MMI Department of Montbéliard</a></p></li>
                 </ul>
             </div>
             <div class="footer-socials">
@@ -82,31 +85,27 @@
         </div>
     </footer>
 </div>
-<!-- Composants de pages -->
+
+<!-- Page components -->
 <script src="pages/accueil.vue.js"></script>
 <script src="pages/biographie.vue.js"></script>
 <script src="pages/albums.vue.js"></script>
 <script src="pages/contact.vue.js"></script>
-<script src="pages/album/create.vue.js"></script>
-
-<!-- Paramétrage back-end -->
-<script src="param/param.js"></script>
 
 <script>
 
-    var routes = [
+    let routes = [
         {path: '/', name: "Accueil", component: Accueil},
         {path: '/biographie', name: "Biographie", component: Biographie},
         {path: '/albums', name: "Albums", component: Albums},
-        {path: '/contact', name: "Contact", component: Contact},
-        {path: '/editAlbum', name: "EditAlbum", component: EditAlbum}
+        {path: '/contact', name: "Contact", component: Contact}
     ]
 
-    var router = new VueRouter(
+    let router = new VueRouter(
         {routes: routes}
     )
     // Create app vue
-    var app = new Vue({
+    let app = new Vue({
         el: "#app",
         router: router
     })
